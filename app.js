@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(function(req, res, next) {
   res.status(404);
-  res.send('404: File Not Found');
+  res.send('404: Error File Not Found');
 });
 
 const PORT = process.env.PORT || 3000;
